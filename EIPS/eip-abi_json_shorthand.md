@@ -20,11 +20,11 @@ Construct a contract's ABI JSON at runtime based off a standard interface.
 
 ## Abstract
 <!--A short (~200 word) description of the technical issue being addressed.-->
-The need for a standard interface that outlines functions used in the processes of a client building a contract's ABI JSON at runtime. ABI's are needed but the need for them to be described in such detail upfront it no necessary and is holding back 3rd party developers from writing UI's for public contracts.
+The need for a standard interface that outlines functions used in the process of a client building a contract's ABI JSON at runtime. ABI is needed but the need for them to be described in such detail upfront is not necessary and is holding back 3rd party developers from writing generic UI's that can be applied to more than one public contract at a time. Promote a one to many relationship between contracts and UI.
 
 ## Motivation
 <!--The motivation is critical for EIPs that want to change the Ethereum protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the EIP solves. EIP submissions without sufficient motivation may be rejected outright.-->
-The motivation is critical for EIPs that want to change the Ethereum protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the EIP solves. EIP submissions without sufficient motivation may be rejected outright.
+When developing a dApp there are a number of milestones to be completed before a developer has ability to interact with the dApp via UI. A large portion of a dApp's contract issues are uncovered in the UI building/testing phase. By implementing a standard interface into contract that gives client-side javascript the ability build a contract's ABI JSON at runtime we can then build a generic UI into client-side development tools to allow developers to interact with their contract without the need to create a unique UI. Extending the development experience to include UI and further harden contracts before committing to a data structure.
 
 ## Specification
 <!--The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Ethereum platforms (go-ethereum, parity, cpp-ethereum, ethereumj, ethereumjs, and [others](https://github.com/ethereum/wiki/wiki/Clients)).-->
